@@ -1,9 +1,10 @@
 
-testing neo4j connection to with Neo4j Community servers: 3.5.19 and 4.1.0
+testing neo4j connection to Neo4j Community servers: 3.5.19 and 4.1.0
 
 Using:
 
 user: neo4j
+
 psw: neo4j357
 
 
