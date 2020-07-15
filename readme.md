@@ -1,11 +1,5 @@
 
-testing neo4j connectiion to with Neo4j Community servers:
-
-3.5.19
-
-and 
-
-4.1.0
+testing neo4j connection to with Neo4j Community servers: 3.5.19 and 4.1.0
 
 Using:
 
