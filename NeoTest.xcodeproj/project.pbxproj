@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C711AA9724BE87C000B1BE05 /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = C711AA9624BE87C000B1BE05 /* readme.md */; };
 		C7CA1E9124BE8017005505B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CA1E9024BE8017005505B2 /* AppDelegate.swift */; };
 		C7CA1E9324BE8017005505B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CA1E9224BE8017005505B2 /* SceneDelegate.swift */; };
 		C7CA1E9524BE8017005505B2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CA1E9424BE8017005505B2 /* ContentView.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C711AA9624BE87C000B1BE05 /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
 		C7CA1E8D24BE8017005505B2 /* NeoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7CA1E9024BE8017005505B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7CA1E9224BE8017005505B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +49,7 @@
 		C7CA1E8424BE8017005505B2 = {
 			isa = PBXGroup;
 			children = (
+				C711AA9624BE87C000B1BE05 /* readme.md */,
 				C7CA1E8F24BE8017005505B2 /* NeoTest */,
 				C7CA1E8E24BE8017005505B2 /* Products */,
 			);
@@ -151,6 +154,7 @@
 			files = (
 				C7CA1E9D24BE8018005505B2 /* LaunchScreen.storyboard in Resources */,
 				C7CA1E9A24BE8018005505B2 /* Preview Assets.xcassets in Resources */,
+				C711AA9724BE87C000B1BE05 /* readme.md in Resources */,
 				C7CA1E9724BE8018005505B2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
