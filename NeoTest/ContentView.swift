@@ -7,19 +7,39 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
     
     @State var status = ""
+    @State var host = "localhost"
+    @State var port = "7687"
+    @State var user = "neo4j"
+    @State var psw = "neo4j357"
     
     var body: some View {
         VStack (spacing: 40) {
-            Text("Testing Neo4j bolt connection ....")
-            Text(status)
-        } .padding().onAppear(perform: loadData)
+            TextField("host", text: $host)
+            TextField("port", text: $port)
+            TextField("user", text: $user)
+            TextField("psw", text: $psw)
+            VStack {
+                Button(action: {doConnect()}) {
+                    Image(systemName: "bolt.circle")
+                        .resizable()
+                        .frame(width: 70, height: 70)
+                        .foregroundColor(.blue)
+                }
+                Text("connect").foregroundColor(.blue).font(.caption)
+            }
+            Text(status).foregroundColor(.red)
+        }.textFieldStyle(RoundedBorderTextFieldStyle())
+        .frame(width: 300)
+        .padding()
     }
     
-    func loadData() {
-        let neotest = NeoTester()
+    func doConnect() {
+        let portInt = Int(port) ?? 7687
+        let neotest = NeoTester(host: host, port: portInt, user: user, psw: psw)
         neotest.doConnect() { isConnected in
             if isConnected {
                 status = "is connected"

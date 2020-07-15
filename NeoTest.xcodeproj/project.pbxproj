@@ -16,7 +16,6 @@
 		C7CA1E9D24BE8018005505B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7CA1E9B24BE8018005505B2 /* LaunchScreen.storyboard */; };
 		C7CA1EA524BE8051005505B2 /* NeoTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CA1EA424BE8051005505B2 /* NeoTester.swift */; };
 		C7CA1EA924BE814B005505B2 /* Theo in Frameworks */ = {isa = PBXBuildFile; productRef = C7CA1EA824BE814B005505B2 /* Theo */; };
-		C7CA1EAC24BE8157005505B2 /* Bolt in Frameworks */ = {isa = PBXBuildFile; productRef = C7CA1EAB24BE8157005505B2 /* Bolt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,7 +38,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7CA1EA924BE814B005505B2 /* Theo in Frameworks */,
-				C7CA1EAC24BE8157005505B2 /* Bolt in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,7 +103,6 @@
 			name = NeoTest;
 			packageProductDependencies = (
 				C7CA1EA824BE814B005505B2 /* Theo */,
-				C7CA1EAB24BE8157005505B2 /* Bolt */,
 			);
 			productName = NeoTest;
 			productReference = C7CA1E8D24BE8017005505B2 /* NeoTest.app */;
@@ -136,7 +133,6 @@
 			mainGroup = C7CA1E8424BE8017005505B2;
 			packageReferences = (
 				C7CA1EA724BE814B005505B2 /* XCRemoteSwiftPackageReference "Neo4j-Swift" */,
-				C7CA1EAA24BE8157005505B2 /* XCRemoteSwiftPackageReference "Bolt-swift" */,
 			);
 			productRefGroup = C7CA1E8E24BE8017005505B2 /* Products */;
 			projectDirPath = "";
@@ -381,14 +377,6 @@
 				minimumVersion = 5.2.0;
 			};
 		};
-		C7CA1EAA24BE8157005505B2 /* XCRemoteSwiftPackageReference "Bolt-swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Neo4j-Swift/Bolt-swift.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.2.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -396,11 +384,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C7CA1EA724BE814B005505B2 /* XCRemoteSwiftPackageReference "Neo4j-Swift" */;
 			productName = Theo;
-		};
-		C7CA1EAB24BE8157005505B2 /* Bolt */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C7CA1EAA24BE8157005505B2 /* XCRemoteSwiftPackageReference "Bolt-swift" */;
-			productName = Bolt;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
