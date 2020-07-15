@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,9 @@
 		C7CA1E9724BE8018005505B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7CA1E9624BE8018005505B2 /* Assets.xcassets */; };
 		C7CA1E9A24BE8018005505B2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7CA1E9924BE8018005505B2 /* Preview Assets.xcassets */; };
 		C7CA1E9D24BE8018005505B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7CA1E9B24BE8018005505B2 /* LaunchScreen.storyboard */; };
+		C7CA1EA524BE8051005505B2 /* NeoTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CA1EA424BE8051005505B2 /* NeoTester.swift */; };
+		C7CA1EA924BE814B005505B2 /* Theo in Frameworks */ = {isa = PBXBuildFile; productRef = C7CA1EA824BE814B005505B2 /* Theo */; };
+		C7CA1EAC24BE8157005505B2 /* Bolt in Frameworks */ = {isa = PBXBuildFile; productRef = C7CA1EAB24BE8157005505B2 /* Bolt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,8 @@
 		C7CA1E9924BE8018005505B2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C7CA1E9C24BE8018005505B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7CA1E9E24BE8018005505B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7CA1EA424BE8051005505B2 /* NeoTester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeoTester.swift; sourceTree = "<group>"; };
+		C7CA1EA624BE8067005505B2 /* NeoTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NeoTest.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +36,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7CA1EA924BE814B005505B2 /* Theo in Frameworks */,
+				C7CA1EAC24BE8157005505B2 /* Bolt in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,11 +63,13 @@
 		C7CA1E8F24BE8017005505B2 /* NeoTest */ = {
 			isa = PBXGroup;
 			children = (
+				C7CA1EA424BE8051005505B2 /* NeoTester.swift */,
+				C7CA1E9424BE8017005505B2 /* ContentView.swift */,
 				C7CA1E9024BE8017005505B2 /* AppDelegate.swift */,
 				C7CA1E9224BE8017005505B2 /* SceneDelegate.swift */,
-				C7CA1E9424BE8017005505B2 /* ContentView.swift */,
 				C7CA1E9624BE8018005505B2 /* Assets.xcassets */,
 				C7CA1E9B24BE8018005505B2 /* LaunchScreen.storyboard */,
+				C7CA1EA624BE8067005505B2 /* NeoTest.entitlements */,
 				C7CA1E9E24BE8018005505B2 /* Info.plist */,
 				C7CA1E9824BE8018005505B2 /* Preview Content */,
 			);
@@ -91,6 +100,10 @@
 			dependencies = (
 			);
 			name = NeoTest;
+			packageProductDependencies = (
+				C7CA1EA824BE814B005505B2 /* Theo */,
+				C7CA1EAB24BE8157005505B2 /* Bolt */,
+			);
 			productName = NeoTest;
 			productReference = C7CA1E8D24BE8017005505B2 /* NeoTest.app */;
 			productType = "com.apple.product-type.application";
@@ -118,6 +131,10 @@
 				Base,
 			);
 			mainGroup = C7CA1E8424BE8017005505B2;
+			packageReferences = (
+				C7CA1EA724BE814B005505B2 /* XCRemoteSwiftPackageReference "Neo4j-Swift" */,
+				C7CA1EAA24BE8157005505B2 /* XCRemoteSwiftPackageReference "Bolt-swift" */,
+			);
 			productRefGroup = C7CA1E8E24BE8017005505B2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -148,6 +165,7 @@
 				C7CA1E9124BE8017005505B2 /* AppDelegate.swift in Sources */,
 				C7CA1E9324BE8017005505B2 /* SceneDelegate.swift in Sources */,
 				C7CA1E9524BE8017005505B2 /* ContentView.swift in Sources */,
+				C7CA1EA524BE8051005505B2 /* NeoTester.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +234,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +289,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -286,6 +304,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NeoTest/NeoTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"NeoTest/Preview Content\"";
 				DEVELOPMENT_TEAM = N7KF5K7NET;
@@ -297,6 +316,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ringo.stixneolib.com.NeoTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -307,6 +327,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NeoTest/NeoTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"NeoTest/Preview Content\"";
 				DEVELOPMENT_TEAM = N7KF5K7NET;
@@ -318,6 +339,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ringo.stixneolib.com.NeoTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -345,6 +367,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C7CA1EA724BE814B005505B2 /* XCRemoteSwiftPackageReference "Neo4j-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Neo4j-Swift/Neo4j-Swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.0;
+			};
+		};
+		C7CA1EAA24BE8157005505B2 /* XCRemoteSwiftPackageReference "Bolt-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Neo4j-Swift/Bolt-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C7CA1EA824BE814B005505B2 /* Theo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C7CA1EA724BE814B005505B2 /* XCRemoteSwiftPackageReference "Neo4j-Swift" */;
+			productName = Theo;
+		};
+		C7CA1EAB24BE8157005505B2 /* Bolt */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C7CA1EAA24BE8157005505B2 /* XCRemoteSwiftPackageReference "Bolt-swift" */;
+			productName = Bolt;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C7CA1E8524BE8017005505B2 /* Project object */;
 }
