@@ -14,7 +14,7 @@ struct ContentView: View {
     @State var host = "localhost"
     @State var port = "7687"
     @State var user = "neo4j"
-    @State var psw = "neo4j357"
+    @State var psw = "neo4j"
     
     var body: some View {
         VStack (spacing: 40) {

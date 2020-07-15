@@ -18,7 +18,7 @@ class NeoTester {
     
     let graphDB: BoltClient?
     
-    init(host: String = "localhost", port: Int = 7687, user: String = "neo4j", psw: String = "neo4j357") {
+    init(host: String = "localhost", port: Int = 7687, user: String, psw: String) {
         self.user = user
         self.psw = psw
         self.host = host
