@@ -12,11 +12,11 @@
       },
       {
         "package": "Theo",
-        "repositoryURL": "https://github.com/Neo4j-Swift/Neo4j-Swift.git",
+        "repositoryURL": "https://github.com/Neo4j-Swift/Neo4j-Swift/",
         "state": {
-          "branch": null,
-          "revision": "3549f85dc00603d37735a19b2f468679fc0c889d",
-          "version": "5.2.0"
+          "branch": "dev/5.2.1",
+          "revision": "944951bd8dd395a43b6c73abd217239ffc9a29df",
+          "version": null
         }
       },
       {

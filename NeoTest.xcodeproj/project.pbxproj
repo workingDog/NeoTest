@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C711AA9724BE87C000B1BE05 /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = C711AA9624BE87C000B1BE05 /* readme.md */; };
+		C793FE8024C6C62000552759 /* Theo in Frameworks */ = {isa = PBXBuildFile; productRef = C793FE7F24C6C62000552759 /* Theo */; };
 		C7CA1E9124BE8017005505B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CA1E9024BE8017005505B2 /* AppDelegate.swift */; };
 		C7CA1E9324BE8017005505B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CA1E9224BE8017005505B2 /* SceneDelegate.swift */; };
 		C7CA1E9524BE8017005505B2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CA1E9424BE8017005505B2 /* ContentView.swift */; };
@@ -15,7 +16,6 @@
 		C7CA1E9A24BE8018005505B2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7CA1E9924BE8018005505B2 /* Preview Assets.xcassets */; };
 		C7CA1E9D24BE8018005505B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7CA1E9B24BE8018005505B2 /* LaunchScreen.storyboard */; };
 		C7CA1EA524BE8051005505B2 /* NeoTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CA1EA424BE8051005505B2 /* NeoTester.swift */; };
-		C7CA1EA924BE814B005505B2 /* Theo in Frameworks */ = {isa = PBXBuildFile; productRef = C7CA1EA824BE814B005505B2 /* Theo */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7CA1EA924BE814B005505B2 /* Theo in Frameworks */,
+				C793FE8024C6C62000552759 /* Theo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,7 +102,7 @@
 			);
 			name = NeoTest;
 			packageProductDependencies = (
-				C7CA1EA824BE814B005505B2 /* Theo */,
+				C793FE7F24C6C62000552759 /* Theo */,
 			);
 			productName = NeoTest;
 			productReference = C7CA1E8D24BE8017005505B2 /* NeoTest.app */;
@@ -132,7 +132,7 @@
 			);
 			mainGroup = C7CA1E8424BE8017005505B2;
 			packageReferences = (
-				C7CA1EA724BE814B005505B2 /* XCRemoteSwiftPackageReference "Neo4j-Swift" */,
+				C793FE7E24C6C62000552759 /* XCRemoteSwiftPackageReference "Neo4j-Swift" */,
 			);
 			productRefGroup = C7CA1E8E24BE8017005505B2 /* Products */;
 			projectDirPath = "";
@@ -369,20 +369,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		C7CA1EA724BE814B005505B2 /* XCRemoteSwiftPackageReference "Neo4j-Swift" */ = {
+		C793FE7E24C6C62000552759 /* XCRemoteSwiftPackageReference "Neo4j-Swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Neo4j-Swift/Neo4j-Swift.git";
+			repositoryURL = "https://github.com/Neo4j-Swift/Neo4j-Swift/";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.2.0;
+				branch = dev/5.2.1;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		C7CA1EA824BE814B005505B2 /* Theo */ = {
+		C793FE7F24C6C62000552759 /* Theo */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = C7CA1EA724BE814B005505B2 /* XCRemoteSwiftPackageReference "Neo4j-Swift" */;
+			package = C793FE7E24C6C62000552759 /* XCRemoteSwiftPackageReference "Neo4j-Swift" */;
 			productName = Theo;
 		};
 /* End XCSwiftPackageProductDependency section */

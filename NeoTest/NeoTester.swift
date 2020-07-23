@@ -24,7 +24,7 @@ class NeoTester {
         self.host = host
         self.port = port
         self.boltClient = try? BoltClient(hostname: host, port: port,
-                                          username: user, password: psw, encrypted: true)
+                                          username: user, password: psw, encryption: .unencrypted)
         print("---> NeoTester init boltClient is: \(boltClient.debugDescription)")
     }
     

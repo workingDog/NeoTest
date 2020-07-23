@@ -14,14 +14,14 @@ struct ContentView: View {
     @State var host = "localhost"
     @State var port = "7687"
     @State var user = "neo4j"
-    @State var psw = "neo4j"
+    @State var psw = ""
     
     var body: some View {
         VStack (spacing: 40) {
             TextField("host", text: $host)
             TextField("port", text: $port)
             TextField("user", text: $user)
-            TextField("psw", text: $psw)
+            TextField("password", text: $psw)
             VStack {
                 Button(action: {doConnect()}) {
                     Image(systemName: "bolt.circle")
